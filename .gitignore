@@ -1,0 +1,14 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/ venv/ .env .env.*
+# Models & big data
+models/
+dataset/raw/
+*.pt
+*.bin
+*.safetensors
+# OS/IDE
+.DS_Store
+.vscode/
+.ipynb_checkpoints/

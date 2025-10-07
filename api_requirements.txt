@@ -1,0 +1,6 @@
+﻿fastapi
+uvicorn[standard]
+numpy
+scikit-learn
+transformers
+torch
