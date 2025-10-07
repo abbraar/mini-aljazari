@@ -60,6 +60,10 @@ if has_logo:
 else:
     st.title("نموذج الجزري المصغّر ")
 
+# Subtitle to credit underlying corpus/research
+st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
+st.caption("مبني على «مجموعة بيانات للتعرّف على اللهجات السعودية المتعددة عبر كلمات الأغاني»")
+
 # Sidebar: API status
 st.sidebar.header("حالة الخادم (API)")
 api_url = st.sidebar.text_input("API URL", API_DEFAULT)
