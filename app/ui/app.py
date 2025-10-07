@@ -6,11 +6,14 @@ import os
 import pathlib
 from PIL import Image
 
-# Allow configuring API base URL via env var or sidebar
-API_DEFAULT = (
-    os.environ.get("API_BASE_URL")
-    or st.secrets.get("API_BASE_URL", "http://127.0.0.1:8000")
-)
+# Allow configuring API base URL via env var or (optionally) Streamlit secrets
+API_DEFAULT = os.environ.get("API_BASE_URL")
+if not API_DEFAULT:
+    try:
+        # Access secrets only if available; otherwise ignore
+        API_DEFAULT = st.secrets["API_BASE_URL"]
+    except Exception:
+        API_DEFAULT = "http://127.0.0.1:8000"
 # Try loading logo for page icon (avoid backslash escapes; support env + fallbacks)
 _page_icon = None
 
