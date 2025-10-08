@@ -60,7 +60,7 @@ else:
 # 1) light-normalized (rules/dialect/intent analysis)
 corpus_light: List[str] = [norm_ar(d.get("text", "")) for d in docs]
 # 2) index-normalized (retrieval only). Flags via env for easy A/B:
-INDEX_STOPWORDS = os.getenv("INDEX_STOPWORDS", "1") == "1"
+INDEX_STOPWORDS = os.getenv("INDEX_STOPWORDS", "0") == "1"  # default: no stopword removal
 INDEX_STEM      = os.getenv("INDEX_STEM", "0") == "1"
 corpus_norm: List[str] = [
     norm_ar_index(d.get("text", ""), stopwords=INDEX_STOPWORDS, stem=INDEX_STEM)
