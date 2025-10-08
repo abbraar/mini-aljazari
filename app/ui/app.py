@@ -199,7 +199,7 @@ with tabs[0]:
     st.markdown('<div class="alz-card">', unsafe_allow_html=True)
 
     st.subheader("أدخل سطرًا لتحليل اللهجة والثيم")
-    text = st.text_area("النص:", "عن خطا تعتذرلي ولك الرضا حتى ترضى", height=100)
+    text = st.text_area("النص:", "", height=100)
 
     go = st.button("تحليل", type="primary")
     if go:
@@ -238,7 +238,7 @@ with tabs[1]:
     st.markdown('<div class="alz-card">', unsafe_allow_html=True)
 
     st.subheader("اسأل عن مقاطع ثقافية (RAG)")
-    question = st.text_input("سؤالك:", "ابي بيت عن الصديق")
+    question = st.text_input("سؤالك:", "")
     k = st.number_input("عدد النتائج", min_value=1, max_value=10, value=3, step=1)
     c1, c2 = st.columns(2)
     with c1:
