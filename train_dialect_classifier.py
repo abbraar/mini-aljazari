@@ -1,8 +1,10 @@
 # train_dialect_saudibert.py
 # Reproduces SADSLyC baseline: stratified split + oversampling + BERT fine-tune
-# Works on CPU; faster with GPU. Saves model to models/dialect_hf/
 
-import os, json, pathlib, random, math
+import os
+import json
+import pathlib
+import random
 from collections import Counter, defaultdict
 
 from datasets import Dataset, DatasetDict
@@ -32,15 +34,15 @@ with open(DATA, encoding="utf-8") as f:
     for line in f:
         r = json.loads(line)
         t = r.get("text") or ""
-        d = (r.get("dialect") or "Arabic (unspecified)").strip()
+        d = (r.get("dialect") or "عربي (غير محدد)").strip()
         if len(t) >= 3:
             texts.append(norm_ar(t))
             labels.append(d)
 
 # Map labels -> ids
 label_list = sorted(list(set(labels)))
-label2id = {l:i for i,l in enumerate(label_list)}
-id2label = {i:l for l,i in label2id.items()}
+label2id = {lbl: i for i, lbl in enumerate(label_list)}
+id2label = {i: lbl for lbl, i in label2id.items()}
 
 # Stratified split
 X_train, X_tmp, y_train, y_tmp = train_test_split(
@@ -57,16 +59,19 @@ target = min(maxc, 2000)  # cap to keep training fast
 rng = random.Random(42)
 def oversample(X, y):
     buckets = defaultdict(list)
-    for x,lab in zip(X,y): buckets[lab].append(x)
+    for x, lab in zip(X, y):
+        buckets[lab].append(x)
     Xo, yo = [], []
     for lab in label_list:
         pool = buckets.get(lab, [])
-        if not pool: continue
+        if not pool:
+            continue
         if len(pool) >= target:
             chosen = rng.sample(pool, target)
         else:
-            chosen = pool[:] + [rng.choice(pool) for _ in range(target-len(pool))]
-        Xo.extend(chosen); yo.extend([lab]*len(chosen))
+            chosen = pool[:] + [rng.choice(pool) for _ in range(target - len(pool))]
+        Xo.extend(chosen)
+        yo.extend([lab] * len(chosen))
     return Xo, yo
 
 X_train, y_train = oversample(X_train, y_train)
@@ -94,7 +99,10 @@ model = AutoModelForSequenceClassification.from_pretrained(
 )
 
 if evaluate is not None:
-    accuracy = evaluate.load("accuracy"); f1 = evaluate.load("f1"); precision = evaluate.load("precision"); recall = evaluate.load("recall")
+    accuracy = evaluate.load("accuracy")
+    f1 = evaluate.load("f1")
+    precision = evaluate.load("precision")
+    recall = evaluate.load("recall")
     def compute_metrics(p):
         preds = np.argmax(p.predictions, axis=1)
         return {

@@ -1,4 +1,7 @@
-import os, json, pathlib, random
+import os
+import json
+import pathlib
+import random
 from collections import Counter, defaultdict
 
 from datasets import Dataset, DatasetDict
@@ -30,14 +33,14 @@ with open(DATA, encoding="utf-8") as f:
     for line in f:
         r = json.loads(line)
         t = r.get("text") or ""
-        d = (r.get("dialect") or "Arabic (unspecified)").strip()
+        d = (r.get("dialect") or "عربي (غير محدد)").strip()
         if len(t) >= 3:
             texts.append(norm_ar(t))
             labels.append(d)
 
 label_list = sorted(set(labels))
-label2id = {l:i for i,l in enumerate(label_list)}
-id2label = {i:l for l,i in label2id.items()}
+label2id = {lbl: i for i, lbl in enumerate(label_list)}
+id2label = {i: lbl for lbl, i in label2id.items()}
 
 # stratified split
 X_train, X_tmp, y_train, y_tmp = train_test_split(
@@ -64,7 +67,8 @@ def oversample(X, y):
             chosen = rng.sample(pool, target)
         else:
             chosen = pool[:] + [rng.choice(pool) for _ in range(target - len(pool))]
-        Xo.extend(chosen); yo.extend([lab]*len(chosen))
+        Xo.extend(chosen)
+        yo.extend([lab] * len(chosen))
     return Xo, yo
 
 X_train, y_train = oversample(X_train, y_train)
@@ -78,7 +82,7 @@ ds = DatasetDict({
     "test": mk_ds(X_test, y_test)
 })
 
-MODEL_NAME = os.environ.get("MODEL_NAME", "aubmindlab/bert-base-arabertv02")
+MODEL_NAME = os.environ.get("MODEL_NAME", "faisalq/SaudiBERT")
 tok = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 def tok_fn(batch):
@@ -94,7 +98,9 @@ model = AutoModelForSequenceClassification.from_pretrained(
 # metrics during training (optional)
 if evaluate is not None:
     accuracy = evaluate.load("accuracy")
-    f1 = evaluate.load("f1"); precision = evaluate.load("precision"); recall = evaluate.load("recall")
+    f1 = evaluate.load("f1")
+    precision = evaluate.load("precision")
+    recall = evaluate.load("recall")
     def compute_metrics(p):
         preds = np.argmax(p.predictions, axis=1)
         return {

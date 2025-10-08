@@ -11,7 +11,12 @@ from typing import List, Optional, Tuple, Dict
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from app.shared.text_utils import norm_ar, THEME_RULES, tag_theme
+from app.shared.text_utils import (
+    norm_ar, norm_ar_index, guess_theme_rules_with_match
+)
+import os
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 # -------------------------
 # Paths & data
@@ -51,14 +56,20 @@ else:
             except Exception:
                 continue
 
-# Normalization is imported from shared utils
-corpus: List[str] = [norm_ar(d.get("text", "")) for d in docs]
+# ---- Dual corpora ----
+# 1) light-normalized (rules/dialect/intent analysis)
+corpus_light: List[str] = [norm_ar(d.get("text", "")) for d in docs]
+# 2) index-normalized (retrieval only). Flags via env for easy A/B:
+INDEX_STOPWORDS = os.getenv("INDEX_STOPWORDS", "1") == "1"
+INDEX_STEM      = os.getenv("INDEX_STEM", "0") == "1"
+corpus_norm: List[str] = [
+    norm_ar_index(d.get("text", ""), stopwords=INDEX_STOPWORDS, stem=INDEX_STEM)
+    for d in docs
+]
 
 # -------------------------
 # TF-IDF retriever (CHAR N-GRAMS + normalized)
 # -------------------------
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 
 # Try to load persisted artifacts for faster startup; fallback to fit
 vectorizer = None
@@ -81,17 +92,9 @@ if vectorizer is None or X is None:
         min_df=1,
         max_features=250_000,
     )
-    X = vectorizer.fit_transform(corpus)
+    X = vectorizer.fit_transform(corpus_norm)
 
-def guess_theme_rules_with_match(text: str) -> Tuple[str, Optional[str], Optional[str]]:
-    """Return (theme, matched_regex, matched_span) using normalized text."""
-    t = norm_ar(text)
-    for theme, patterns in THEME_RULES.items():
-        for p in patterns:
-            m = re.search(p, t)
-            if m:
-                return theme, p, m.group(0)
-    return "اخرى", None, None
+
 
 # -------------------------
 # Optional tiny THEME classifier (auto-load if present)
@@ -126,7 +129,6 @@ hf_dialect = None  # (model, tok, id2label, device)
 try:
     if HF_DIALECT_DIR.exists():
         import torch  # type: ignore[import]
-        import numpy as np  # type: ignore[import]
         from transformers import AutoTokenizer, AutoModelForSequenceClassification  # type: ignore[import]
         tok = AutoTokenizer.from_pretrained(str(HF_DIALECT_DIR))
         mdl = AutoModelForSequenceClassification.from_pretrained(str(HF_DIALECT_DIR))
@@ -149,7 +151,7 @@ try:
 except Exception:
     dialect_clf = None
 
-HIJAZI_MARKERS = [
+Hijazi_MARKERS = [
     r"(?<!\S)فين(?!\S)",
     r"(?<!\S)لسه(?!\S)",
     r"(?<!\S)دحين(?!\S)",
@@ -161,10 +163,10 @@ HIJAZI_MARKERS = [
 
 def guess_dialect_heuristic(text: str) -> Tuple[str, float, Dict]:
     t = norm_ar(text)
-    hits = [p for p in HIJAZI_MARKERS if re.search(p, t)]
+    hits = [p for p in Hijazi_MARKERS if re.search(p, t)]
     if hits:
-        return "Hijazi", 0.60, {"method": "heuristic", "markers_hit": hits}
-    return "Arabic (unspecified)", 0.0, {"method": "heuristic", "markers_hit": hits}
+        return "حجازي", 0.60, {"method": "heuristic", "markers_hit": hits}
+    return "عربي (غير محدد)", 0.0, {"method": "heuristic", "markers_hit": hits}
 
 def guess_dialect_knn(text: str, k: int = 7) -> Tuple[str, float, Dict]:
     """No training: use TF-IDF char n-grams nearest neighbors."""
@@ -176,12 +178,12 @@ def guess_dialect_knn(text: str, k: int = 7) -> Tuple[str, float, Dict]:
     total = 0.0
     for i in top:
         d = docs[i]
-        lab = d.get("dialect") or "Arabic (unspecified)"
+        lab = d.get("dialect") or "عربي (غير محدد)"
         w = float(sims[i])
         counts[lab] = counts.get(lab, 0.0) + w
         total += w
     if total <= 1e-9:
-        return "Arabic (unspecified)", 0.0, {"method": "knn", "neighbors": counts}
+        return "عربي (غير محدد)", 0.0, {"method": "knn", "neighbors": counts}
     label, weight = max(counts.items(), key=lambda kv: kv[1])
     conf = weight / total
     return label, float(conf), {"method": "knn", "neighbors": counts}
@@ -191,7 +193,6 @@ def guess_dialect_smart(text: str) -> Tuple[str, Optional[float], Dict]:
     if hf_dialect is not None:
         try:
             import torch  # type: ignore[import]
-            import numpy as np  # type: ignore[import]
             mdl, tok, id2label, device = hf_dialect
             tokens = tok(norm_ar(text), truncation=True, max_length=128, return_tensors="pt")
             tokens = {k: v.to(device) for k, v in tokens.items()}
@@ -213,7 +214,7 @@ def guess_dialect_smart(text: str) -> Tuple[str, Optional[float], Dict]:
             pass
     # 2) k-NN vote over corpus
     lab, conf, dbg = guess_dialect_knn(text)
-    if lab != "Arabic (unspecified)" and conf >= 0.45:
+    if lab != "عربي (غير محدد)" and conf >= 0.45:
         return lab, conf, dbg
     # 3) Heuristic fallback
     return guess_dialect_heuristic(text)
@@ -283,7 +284,7 @@ class AskIn(BaseModel):
     show_sources: bool = True
     # optional knobs:
     theme_hint: Optional[str] = None      # "غزل" | "وطنية" | "رياضية" | "دينية"
-    dialect_filter: Optional[str] = None  # "Hijazi" | "Najdi" | "Shamali" | "Janoubi"
+    dialect_filter: Optional[str] = None  # "حجازي" | "نجدي" | "شمالي" | "جنوبي"
     strict: bool = False
     min_intent_hits: int = 0
 
@@ -333,11 +334,13 @@ def ask(inp: AskIn):
         )
 
     # Normalize + expand + intended theme
-    q_norm, intent_rgx = expand_query(q_raw)
+    q_norm, intent_rgx = expand_query(q_raw)  
     intended_theme = (inp.theme_hint or guess_theme_rules_with_match(q_norm)[0])
 
     # Retrieve with CHAR n-grams
-    q_vec = vectorizer.transform([q_norm])
+    # Use index-normalized query for TF-IDF search
+    q_norm_index = norm_ar_index(q_raw, stopwords=INDEX_STOPWORDS, stem=INDEX_STEM)
+    q_vec = vectorizer.transform([q_norm_index])
     sims = cosine_similarity(q_vec, X)[0]
 
     # Theme/intent-aware scoring
@@ -345,7 +348,7 @@ def ask(inp: AskIn):
         base = float(sims[i])
         doc = docs[i]
         doc_theme = doc.get("theme", "") or "اخرى"
-        text_norm = corpus[i]
+        text_norm = corpus_light[i]
 
         hits = count_intent_hits(text_norm, intent_rgx)
         if hits:
@@ -369,7 +372,7 @@ def ask(inp: AskIn):
         if inp.dialect_filter and (d.get("dialect", "").lower() != inp.dialect_filter.lower()):
             continue
 
-        text_norm = corpus[i]
+        text_norm = corpus_light[i]
         intent_hits = count_intent_hits(text_norm, intent_rgx)
         theme_match = (d.get("theme", "") == intended_theme)
 

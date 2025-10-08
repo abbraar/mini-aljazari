@@ -1,8 +1,10 @@
 # dataset/preprocess.py
-import json, re, random, pathlib
+import json
+import random
+import pathlib
 from collections import defaultdict
 
-from app.shared.text_utils import norm_ar, THEME_RULES, tag_theme
+from app.shared.text_utils import norm_ar, tag_theme
 
 RAW = pathlib.Path("dataset/raw/SADSLyC.json")
 PROC_DIR = pathlib.Path("dataset/processed")
@@ -11,10 +13,6 @@ RETRIEVER_DIR = pathlib.Path("retriever")
 PROC_DIR.mkdir(parents=True, exist_ok=True)
 SPLIT_DIR.mkdir(parents=True, exist_ok=True)
 RETRIEVER_DIR.mkdir(parents=True, exist_ok=True)
-
-# Normalization and theme rules are imported from app.shared.text_utils
-
-# THEME_RULES and tag_theme imported
 
 
 def _ensure_dict(x):
@@ -34,7 +32,7 @@ def load_rows():
     rows = []
 
     if isinstance(root, dict):
-        # expect dialect buckets: {"Hijazi": [ {...}, {...} ], "Najdi": [ ... ], ...}
+        # expect dialect buckets: {"حجازي": [ {...}, {...} ], "نجدي": [ ... ], ...}
         for dialect_key, items in root.items():
             if not isinstance(items, list):
                 continue
