@@ -94,8 +94,6 @@ if vectorizer is None or X is None:
     )
     X = vectorizer.fit_transform(corpus_norm)
 
-
-
 # -------------------------
 # Optional tiny THEME classifier (auto-load if present)
 # -------------------------
@@ -236,6 +234,8 @@ EXPAND_MAP = {
     "غزلي":   ["حب", "غرام", "عشق", "حبيب", "شوق", "قلب", "ود", "وصال"],
     "وطني":   ["سعود", "رايه", "علم", "موطني", "بلاد", "فخر", "مجدي", "وطن"],
     "بيت":    ["بيت شعر", "شطر", "قصيده", "سطر"],
+    # New: sports intent synonyms
+    "رياضي":  ["كرة", "نادي", "مباراة", "بطولة", "دوري", "هدف", "ملعب", "مدرب", "لاعب"],
 }
 GENERIC_POETRY = re.compile(r"(?:بيت(?:\s*شعر)?|قوافي|قواف|قافية)")
 
@@ -260,9 +260,30 @@ def count_intent_hits(text_norm: str, intent_regexes: List[re.Pattern]) -> int:
     return sum(1 for rgx in intent_regexes if rgx.search(text_norm))
 
 # -------------------------
+# Sport intent helpers (to disambiguate الرياضة vs الرياض)
+# -------------------------
+SPORT_TOKENS = [
+    "رياضة", "رياضي", "تمارين", "ملعب", "مدرج", "مباراة", "بطولة",
+    "دوري", "كأس", "مدرب", "لاعب", "هدف", "ركلة", "شوط", "تسديدة",
+    "فوز", "تعادل", "هزيمة", "حكم", "تبديل", "ميدان", "كرة", "كرة القدم",
+    "سلة", "طائرة", "تنس", "سباق", "نادي", "الجمهور", "مشجع", "تشجيع"
+]
+
+# "الرياض" as a city token (full word after normalization)
+CITY_RIYADH_REGEX = re.compile(r"(?<!\S)الرياض(?!\S)")
+
+def has_any_token(text_norm: str, tokens: List[str]) -> bool:
+    """Match tokens as standalone words in normalized Arabic text."""
+    for tkn in tokens:
+        pat = re.compile(rf"(?<!\S){re.escape(norm_ar(tkn))}(?!\S)")
+        if pat.search(text_norm):
+            return True
+    return False
+
+# -------------------------
 # FastAPI app
 # -------------------------
-app = FastAPI(title="Mini Al-Jazari API", version="0.7")
+app = FastAPI(title="Mini Al-Jazari API", version="0.8")
 
 app.add_middleware(
     CORSMiddleware,
@@ -334,8 +355,14 @@ def ask(inp: AskIn):
         )
 
     # Normalize + expand + intended theme
-    q_norm, intent_rgx = expand_query(q_raw)  
+    q_norm, intent_rgx = expand_query(q_raw)
     intended_theme = (inp.theme_hint or guess_theme_rules_with_match(q_norm)[0])
+
+    # Detect explicit sport intent (helps disambiguate "الرياضة" vs "الرياض")
+    q_light_norm = norm_ar(q_raw)
+    sport_intent = has_any_token(q_light_norm, SPORT_TOKENS) or bool(
+        re.search(r"رياضة|الرياضه", q_raw)
+    )
 
     # Retrieve with CHAR n-grams
     # Use index-normalized query for TF-IDF search
@@ -359,6 +386,20 @@ def ask(inp: AskIn):
             base *= 0.65
         if GENERIC_POETRY.search(text_norm) and hits == 0:
             base *= 0.60
+
+        # --- NEW: disambiguate sport vs Riyadh city ---
+        if sport_intent:
+            contains_sport = has_any_token(text_norm, SPORT_TOKENS)
+            mentions_riyadh_city = CITY_RIYADH_REGEX.search(text_norm) is not None
+
+            # Penalize pure "Riyadh (city)" mentions when no sport context
+            if mentions_riyadh_city and not contains_sport:
+                base *= 0.35  # strong penalty
+
+            # Reward sport-context lines
+            if contains_sport:
+                base *= 1.20  # mild boost
+
         return base
 
     idx_sorted = sorted(range(len(sims)), key=lambda i: themed_score(i), reverse=True)
@@ -425,6 +466,7 @@ def ask(inp: AskIn):
             "dialect_filter": inp.dialect_filter,
             "strict": inp.strict,
             "min_intent_hits": inp.min_intent_hits,
+            "sport_intent": sport_intent,
         },
     }
     return Response(

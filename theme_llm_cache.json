@@ -1,0 +1,1502 @@
+{
+  "يالسعودي يالبطل نبت ارض المسلمين": {
+    "theme": "فخر سعودي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فخر سعودي\", \"score\": 1,",
+    "parent": null
+  },
+  "زاد مجدك واتصل والخلايق شاهدين": {
+    "theme": "فخر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فخر\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "والمعالي هي مرادك والعزايم ما تلين": {
+    "theme": "طموح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طموح\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "قال السعودي الحمي من حدر واقصاها": {
+    "theme": "وطنية",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وطنية\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "اسقي الاعادي ظما وما تلين لعداها": {
+    "theme": "قوة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قوة\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "صارت بعز وفخر والسعد لاقاها": {
+    "theme": "فخر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فخر\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "وش تقولوا اتي": {
+    "theme": "دعوة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"دعوة\", \"score\": 0.8, \"w",
+    "parent": null
+  },
+  "من عانده يتعب": {
+    "theme": "قوة وصمود",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قوة وصمود\", \"score\": 1,",
+    "parent": null
+  },
+  "عاشوا المحبين": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 1.0, \"why",
+    "parent": null
+  },
+  "علي الراس والعين": {
+    "theme": "تكريم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تكريم\", \"score\": 0.95, ",
+    "parent": null
+  },
+  "اصفر بلون الذهب": {
+    "theme": "لون",
+    "score": 0.6,
+    "why": "json { \"theme\": \"لون\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "اسود يا حالي العنب": {
+    "theme": "جمال العنب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"جمال العنب\", \"score\": 0",
+    "parent": null
+  },
+  "عاشق من ضمن الملايين": {
+    "theme": "عشق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عشق\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "واستلمت الكاس": {
+    "theme": "فوز بالكأس",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فوز بالكأس\", \"score\": 1",
+    "parent": null
+  },
+  "من اعز الناس": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 0.9, \"why",
+    "parent": null
+  },
+  "الكل صحبة جونا مهنيين": {
+    "theme": "تهاني",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تهاني\", \"score\": 1, \"wh",
+    "parent": null
+  },
+  "جيتني مرحبا بك": {
+    "theme": "ترحيب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ترحيب\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "عن خطا تعتذرلي": {
+    "theme": "اعتذار",
+    "score": 0.6,
+    "why": "json { \"theme\": \"اعتذار\", \"score\": 1.0, ",
+    "parent": null
+  },
+  "قابلين اعتذارك": {
+    "theme": "قبول اعتذار",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قبول اعتذار\", \"score\": ",
+    "parent": null
+  },
+  "ماتعود ياحبيب": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "الا وخاطرك طيب": {
+    "theme": "اطمئنان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"اطمئنان\", \"score\": 0.95",
+    "parent": null
+  },
+  "من حق محبوبي يثقل": {
+    "theme": "دلال المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"دلال المحبوب\", \"score\":",
+    "parent": null
+  },
+  "معقول ياناس ازعل": {
+    "theme": "زعل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"زعل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "الاوله للي يسال": {
+    "theme": "مقدمة رد",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مقدمة رد\", \"score\": 0.9",
+    "parent": null
+  },
+  "للي تعني وتجمل": {
+    "theme": "مدح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مدح\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "منك الصفا ومني اكثر": {
+    "theme": "عشق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عشق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "واللي بدا قد تفضل": {
+    "theme": "فضل ومبادرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فضل ومبادرة\", \"score\": ",
+    "parent": null
+  },
+  "اهلا وسهلا تفضل": {
+    "theme": "ترحيب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ترحيب\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "رمز الوفاء والمحبه": {
+    "theme": "حب ووفاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب ووفاء\", \"score\": 1, ",
+    "parent": null
+  },
+  "وباللقاء الانس يكمل": {
+    "theme": "أنس اللقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أنس اللقاء\", \"score\": 0",
+    "parent": null
+  },
+  "يا بو مشاعر رقيقة الحال ما يجهلك": {
+    "theme": "استعطاف",
+    "score": 0.6,
+    "why": "json { \"theme\": \"استعطاف\", \"score\": 0.9,",
+    "parent": null
+  },
+  "انت بحياتي الحقيقة واحساسنا مشترك": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 1, \"why\":",
+    "parent": null
+  },
+  "دون ترابك الرقاب ومننا نغذي الحراب": {
+    "theme": "فداء الوطن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فداء الوطن\", \"score\": 0",
+    "parent": null
+  },
+  "الحياة بالحياة والمقابل ما نهاب": {
+    "theme": "شجاعة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شجاعة\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "السلام سلمنا والمعارك علمنا": {
+    "theme": "سلام وحرب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سلام وحرب\", \"score\": 1,",
+    "parent": null
+  },
+  "والعهد لال السعود حاشي والله يا حسود ما تخطي ارضنا": {
+    "theme": "وطنية",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وطنية\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "ما يطيب العيش غير مجاهدين": {
+    "theme": "طموح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طموح\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "النعيم اليوم ما تبغوا وصاه": {
+    "theme": "مرح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مرح\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "من سلاحه الشر حنا مسلمين": {
+    "theme": "ثبات ديني",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ثبات ديني\", \"score\": 0.",
+    "parent": null
+  },
+  "ما يخاف الليل الا من طغي": {
+    "theme": "خوف الظالم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"خوف الظالم\", \"score\": 1",
+    "parent": null
+  },
+  "ما يضير الليل الا الظالمين": {
+    "theme": "نقد الظلم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"نقد الظلم\", \"score\": 0.",
+    "parent": null
+  },
+  "ما تصيب النار الا من بغي": {
+    "theme": "عبرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عبرة\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "اشر بايدك او تلطف بالسلام": {
+    "theme": "طلب تواصل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طلب تواصل\", \"score\": 0.",
+    "parent": null
+  },
+  "سلم بايدك او تلطف بالسلام": {
+    "theme": "سلام",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سلام\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "الشوق يا محبوب يشعلني ضرام": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "والجفن ما يرتاح لا عيني تنام": {
+    "theme": "أرق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أرق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "لو في مره حس بي": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "بين غضب والا عتب": {
+    "theme": "عتاب وغضب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب وغضب\", \"score\": 1,",
+    "parent": null
+  },
+  "والا اشر بالهدب": {
+    "theme": "إشارة غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"إشارة غزل\", \"score\": 1,",
+    "parent": null
+  },
+  "في خاطري عذب وسلام": {
+    "theme": "سلام داخلي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سلام داخلي\", \"score\": 1",
+    "parent": null
+  },
+  "شكيت المر له كم الف مره": {
+    "theme": "شكوى",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شكوى\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "انا ملتاع وراعي الحب ادري": {
+    "theme": "لوعة الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"لوعة الحب\", \"score\": 1.",
+    "parent": null
+  },
+  "تغلي لو طلبت العمر اهلي": {
+    "theme": "قيمة الأهل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قيمة الأهل\", \"score\": 0",
+    "parent": null
+  },
+  "ورود العمر لك زهره وعطره": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "لو ما يكلف عليك اسال علينا وطل": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "ولا تعزز علينا الدنيا ماهي بايدينا": {
+    "theme": "قضاء وقدر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قضاء وقدر\", \"score\": 0.",
+    "parent": null
+  },
+  "ساعة تعدي وتذل": {
+    "theme": "ذل الزمن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ذل الزمن\", \"score\": 0.9",
+    "parent": null
+  },
+  "ليه اللقاء صعب وغريب": {
+    "theme": "صعوبة اللقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صعوبة اللقاء\", \"score\":",
+    "parent": null
+  },
+  "بعد التواصل والحنان": {
+    "theme": "حنان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حنان\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "كنا حبايب ما نغيب": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "تسال وانا اسال عليك": {
+    "theme": "شوق وسؤال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق وسؤال\", \"score\": 1,",
+    "parent": null
+  },
+  "حبل الموده متصل": {
+    "theme": "مودة مستمرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مودة مستمرة\", \"score\": ",
+    "parent": null
+  },
+  "في لحظة تنسي اللي كان": {
+    "theme": "نشوة اللحظة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"نشوة اللحظة\", \"score\": ",
+    "parent": null
+  },
+  "تري التسامح ياحبيب": {
+    "theme": "التسامح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"التسامح\", \"score\": 0.9,",
+    "parent": null
+  },
+  "خطوة عزيزة وفنفسي لها معني": {
+    "theme": "تقدير خاص",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تقدير خاص\", \"score\": 0.",
+    "parent": null
+  },
+  "اكبرتها منك حبيت تجمعنا": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "راعيت لي قدري وكبرت في نظري": {
+    "theme": "تقدير",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تقدير\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "دي جيتك ع الراس": {
+    "theme": "ترحيب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ترحيب\", \"score\": 1, \"wh",
+    "parent": null
+  },
+  "تكرم يا اغلي الناس": {
+    "theme": "تقدير",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تقدير\", \"score\": 1.0, \"",
+    "parent": null
+  },
+  "معروف باحساسك كامل ومتكمل": {
+    "theme": "إطراء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"إطراء\", \"score\": 0.95, ",
+    "parent": null
+  },
+  "تراعي شعور ناسك دايم ومتجمل": {
+    "theme": "حسن خلق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حسن خلق\", \"score\": 0.9,",
+    "parent": null
+  },
+  "اطلب بعيوني يا عيوني تمون": {
+    "theme": "غزل ومحبة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل ومحبة\", \"score\": 1.",
+    "parent": null
+  },
+  "اللي تقوله يا عيوني يكون": {
+    "theme": "طاعة المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طاعة المحبوب\", \"score\":",
+    "parent": null
+  },
+  "وانت الذي تسال اخجلتني بطيبك": {
+    "theme": "امتنان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"امتنان\", \"score\": 1, \"w",
+    "parent": null
+  },
+  "اول ما نبدا وش نقول": {
+    "theme": "تسبيح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تسبيح\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "ونثني بصلاة علي الرسول": {
+    "theme": "صلاة النبي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صلاة النبي\", \"score\": 1",
+    "parent": null
+  },
+  "هلا هلا باللي جاء": {
+    "theme": "ترحيب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ترحيب\", \"score\": 1, \"wh",
+    "parent": null
+  },
+  "اخضر اخضر اخضر": {
+    "theme": "خضرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"خضرة\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "يا عيون المحبين": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "اصحاب المواقف واصحاب الرووة": {
+    "theme": "مروءة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مروءة\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "وسط القلوب اسمك وعالي المكانه": {
+    "theme": "حب وثناء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب وثناء\", \"score\": 0.8",
+    "parent": null
+  },
+  "انا طالب المعذرة الحب غيرة وظنون غيرة وظنون": {
+    "theme": "غيرة وحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غيرة وحب\", \"score\": 0.9",
+    "parent": null
+  },
+  "تعذرني يا هل تري ولا تزيد الهموم تزيد الهموم": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "وصلت انا عند بابك ملهوف اسمع عتابك": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "لا تاخدك في جوابك عزة وحبي يهون": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "في النفس عتبان وشايل في الود نصفي ونعود": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "كثرالملام والمعاتب ما يجيب غير الجروح": {
+    "theme": "ألم العتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ألم العتاب\", \"score\": 0",
+    "parent": null
+  },
+  "في نظروالله يا صاحب نلقي جفانا يروح": {
+    "theme": "مصالحة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مصالحة\", \"score\": 0.9, ",
+    "parent": null
+  },
+  "في الهوي مافي صلة": {
+    "theme": "جفاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"جفاء\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "تقولي تعبت تقولي سهرت": {
+    "theme": "تعب وسهر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تعب وسهر\", \"score\": 1.0",
+    "parent": null
+  },
+  "او تشتكي تقولي يامين": {
+    "theme": "شكوى",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شكوى\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "يقدر يحل المسالة": {
+    "theme": "قدرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قدرة\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "ياما شكي ياما ياما حكي ياما": {
+    "theme": "شكوى",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شكوى\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "ياما بكي ياما تعني في الهوي": {
+    "theme": "عذاب الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عذاب الحب\", \"score\": 1,",
+    "parent": null
+  },
+  "لو تشتكي يقول القمر حاضر ويهجر موعدي": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "ما عاد له قدرة علي هجر وعنا": {
+    "theme": "انتهاء الهجر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"انتهاء الهجر\", \"score\":",
+    "parent": null
+  },
+  "اما انت صدقيني كل مين يستني ردك": {
+    "theme": "انتظار المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"انتظار المحبوب\", \"score",
+    "parent": null
+  },
+  "لو بيدي تلتقيني من سنين اطب في ودك": {
+    "theme": "شوق للوصل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق للوصل\", \"score\": 0.",
+    "parent": null
+  },
+  "رقة وذوق كلك حلا": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "لا شفت وجهه رايت البدر يتبسم": {
+    "theme": "وصف الجمال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصف الجمال\", \"score\": 1",
+    "parent": null
+  },
+  "لا سمعت صوته سمعت العود والمغني": {
+    "theme": "جمال الصوت",
+    "score": 0.6,
+    "why": "json { \"theme\": \"جمال الصوت\", \"why\": \"ال",
+    "parent": null
+  },
+  "لا بان رمشه سواري القلب تتحطم": {
+    "theme": "تأثير الجمال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تأثير الجمال\", \"score\":",
+    "parent": null
+  },
+  "اما العيون السواكن سرها المبهم": {
+    "theme": "عيون غامضة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عيون غامضة\", \"score\": 0",
+    "parent": null
+  },
+  "يحتار عقلك وفهمك يجهل المعني": {
+    "theme": "حيرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حيرة\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "والقد بالقد يدوبك يشبه المعصم": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "والحسن اية خلقها الواحد الاعظم": {
+    "theme": "جمال إلهي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"جمال إلهي\", \"score\": 1,",
+    "parent": null
+  },
+  "بالحسن نشقي وفيه القلب يتهني": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "لو اجدب الوعد عسي هالدنيا تجمعنا": {
+    "theme": "شوق اللقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق اللقاء\", \"score\": 1",
+    "parent": null
+  },
+  "حالي مبسمك وردي": {
+    "theme": "ثناء على الجمال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ثناء على الجمال\", \"scor",
+    "parent": null
+  },
+  "يا ابوغرة علي عيونه": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "بنظرة تاخذ وتودي": {
+    "theme": "سحر النظرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سحر النظرة\", \"score\": 0",
+    "parent": null
+  },
+  "للاشواق مجنونة": {
+    "theme": "شوق شديد",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق شديد\", \"score\": 1, ",
+    "parent": null
+  },
+  "تلطف يا حلو وارحم": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "حبيبك في الهوي معدم": {
+    "theme": "عشق محروم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عشق محروم\", \"score\": 1.",
+    "parent": null
+  },
+  "وقليبي علي ناري": {
+    "theme": "حزن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حزن\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "ومشقي عيوني بجفونك": {
+    "theme": "سحر العيون",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سحر العيون\", \"score\": 0",
+    "parent": null
+  },
+  "تكلم لو تقول اسمي": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "ومراعاة تراعونه": {
+    "theme": "طلب مراعاة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طلب مراعاة\", \"score\": 0",
+    "parent": null
+  },
+  "حرام تهجر وتتمنع": {
+    "theme": "هجر وعتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"هجر وعتاب\", \"score\": 0.",
+    "parent": null
+  },
+  "وصوت الحب ما تسمع": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "مصيرك في الهوي توقع": {
+    "theme": "مصير الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مصير الحب\", \"score\": 1.",
+    "parent": null
+  },
+  "تذوق الصد وفنونه": {
+    "theme": "صد",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صد\", \"score\": 0.95, \"wh",
+    "parent": null
+  },
+  "ياما سهرت الليالي وجفن ما يغمض": {
+    "theme": "أرق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أرق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "وابذل لك الغالي واقول اطلب تمن": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 1.0, \"why",
+    "parent": null
+  },
+  "لو تنطق عروقي بتعلنها علن": {
+    "theme": "حب عميق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب عميق\", \"score\": 0.9,",
+    "parent": null
+  },
+  "لو ما عطفت اليوم لروي ثري الارض": {
+    "theme": "عطف المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عطف المحبوب\", \"score\": ",
+    "parent": null
+  },
+  "ما اكذب عليك": {
+    "theme": "صدق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صدق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "اول ما جت ايدي في ايديك": {
+    "theme": "تلامس الأيدي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تلامس الأيدي\", \"score\":",
+    "parent": null
+  },
+  "ولقيت نفسي في عينيك": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "واصبحت انا من غير شعور": {
+    "theme": "بلا إحساس",
+    "score": 0.6,
+    "why": "json { \"theme\": \"بلا إحساس\", \"score\": 0.",
+    "parent": null
+  },
+  "وفي لحظة حسيت بحنين": {
+    "theme": "حنين",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حنين\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "كني عرفتك من سنين": {
+    "theme": "تآلف",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تآلف\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "تهديني عطرك والشذي": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "يا سيدي الليله": {
+    "theme": "مناجاة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مناجاة\", \"score\": 0.7, ",
+    "parent": null
+  },
+  "الليله اصبح موعدي": {
+    "theme": "لقاء منتظر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"لقاء منتظر\", \"score\": 0",
+    "parent": null
+  },
+  "ويا فرحتي الليله": {
+    "theme": "فرحة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فرحة\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "كل المشاعر غردي": {
+    "theme": "غناء المشاعر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غناء المشاعر\", \"score\":",
+    "parent": null
+  },
+  "الليله تبدا فرحتك": {
+    "theme": "فرح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فرح\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "والليله تكمل فرحتي": {
+    "theme": "فرحة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فرحة\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "معك تطيب الروح والراس مرفوعه": {
+    "theme": "حب واعتزاز",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب واعتزاز\", \"score\": 0",
+    "parent": null
+  },
+  "كل رخصك الروح والكلمة مسموعه": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "انتي الخير يا ارضنا وانتي الكرم لجارنا": {
+    "theme": "حب الوطن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب الوطن\", \"score\": 1, ",
+    "parent": null
+  },
+  "يا سايره بالخير يا رمز السلام": {
+    "theme": "سلام وخير",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سلام وخير\", \"score\": 0.",
+    "parent": null
+  },
+  "انتي الهوي والماي وانتي السعر والناي": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "وانتي القنا والسيف وانتي الفكر والراي": {
+    "theme": "مدح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"مدح\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "انتي حبي الوحيد اما غيرك ف لا": {
+    "theme": "حب وحيد",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب وحيد\", \"score\": 1.0,",
+    "parent": null
+  },
+  "سلم علي من تقدم للفداء اضمر": {
+    "theme": "فداء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فداء\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "في الدنيا امجاد وفي الجنة نعيم انعم": {
+    "theme": "دينية",
+    "score": 0.6,
+    "why": "json { \"theme\": \"دينية\", \"score\": 1, \"wh",
+    "parent": null
+  },
+  "ما لقيوا في الورد عيب قالوا احمر الخدين": {
+    "theme": "إطراء الجمال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"إطراء الجمال\", \"score\":",
+    "parent": null
+  },
+  "يا نجم ضاوي واعتلا": {
+    "theme": "وصف نجم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصف نجم\", \"score\": 0.95",
+    "parent": null
+  },
+  "راعي اللي حبك ولو بالعين": {
+    "theme": "تذكير بالحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تذكير بالحب\", \"score\": ",
+    "parent": null
+  },
+  "ما تدري يالواشي صعب انك تفرق الاثنين": {
+    "theme": "عتاب الواشي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب الواشي\", \"score\": ",
+    "parent": null
+  },
+  "تتعب ولا تلقي عيب في المحبوب يا المسكين": {
+    "theme": "كمال المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"كمال المحبوب\", \"score\":",
+    "parent": null
+  },
+  "مو غريب انك تلوع في الكلام": {
+    "theme": "عتاب كلام",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب كلام\", \"score\": 0.",
+    "parent": null
+  },
+  "او غريبه تحرم العين المنام": {
+    "theme": "أرق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أرق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "بس ماجاء في بالي تسهر انت الليالي": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "كم علي حبي وروحي جنيت": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "وكم انا تمنيت ودك ما اهتنيت": {
+    "theme": "شوق وحرمان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق وحرمان\", \"score\": 0",
+    "parent": null
+  },
+  "ما تحرك شعورك لاهين في غرورك": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "لين جاء غيري واحرمك المنام": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "ذوق ياروحي تباريح الهوي": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "واذكر اللي من هواكم ما ارتوي": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "جرب الشوق وابكي": {
+    "theme": "شوق وبكاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق وبكاء\", \"score\": 1,",
+    "parent": null
+  },
+  "وشوف كيف كنت انا اشكي": {
+    "theme": "شكوى",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شكوى\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "مالي بلقال والقيل": {
+    "theme": "تجنب القيل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تجنب القيل\", \"score\": 1",
+    "parent": null
+  },
+  "لا لا اما المواصل": {
+    "theme": "وصل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصل\", \"score\": 0.7, \"wh",
+    "parent": null
+  },
+  "ولا قطع المراسيل": {
+    "theme": "وصال دائم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصال دائم\", \"score\": 0.",
+    "parent": null
+  },
+  "لا لا وان شفت ياطير": {
+    "theme": "رسالة عبر الطير",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رسالة عبر الطير\", \"scor",
+    "parent": null
+  },
+  "قله الشوق فضبي": {
+    "theme": "قلة الشوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قلة الشوق\", \"score\": 0.",
+    "parent": null
+  },
+  "والعواذل تسلو": {
+    "theme": "سكوت العواذل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سكوت العواذل\", \"score\":",
+    "parent": null
+  },
+  "لا لا وجاني جوابك": {
+    "theme": "رد محبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رد محبوب\", \"score\": 0.9",
+    "parent": null
+  },
+  "قلت تهوي وتحبي": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 1.0, \"why",
+    "parent": null
+  },
+  "لا لا ومهما تقولي": {
+    "theme": "رفض",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رفض\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "ماشي ع الراس والعين": {
+    "theme": "قبول وتقدير",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قبول وتقدير\", \"score\": ",
+    "parent": null
+  },
+  "قالوا ودعلك": {
+    "theme": "وداع",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وداع\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "قلت يسلم ويجي": {
+    "theme": "ترقب عودة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ترقب عودة\", \"score\": 0.",
+    "parent": null
+  },
+  "قالوا يعودلك": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "ما اصعب الفرقي": {
+    "theme": "فراق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فراق\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "علي القلب الحزين": {
+    "theme": "حزن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حزن\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "قالوا تصبر": {
+    "theme": "صبر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صبر\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "قلت نيراني تقيد": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 0.85, \"w",
+    "parent": null
+  },
+  "قالوا ما تقدر": {
+    "theme": "تحدي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تحدي\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "قلت ع الرفقي يا سيد": {
+    "theme": "دعوة للرفق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"دعوة للرفق\", \"score\": 0",
+    "parent": null
+  },
+  "قالوا تسلي": {
+    "theme": "تسلية",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تسلية\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "قلت ما عندي سلا": {
+    "theme": "لا سلوى",
+    "score": 0.6,
+    "why": "json { \"theme\": \"لا سلوى\", \"score\": 1, \"",
+    "parent": null
+  },
+  "قالوا تخلي": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "قلت لا والفين لا": {
+    "theme": "رفض",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رفض\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "ان كان لي حظ ونصيب": {
+    "theme": "أمل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أمل\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "من بعد غيبه": {
+    "theme": "غياب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غياب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "هو ذا محبوبي هو ذا ماغيره": {
+    "theme": "حب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب\", \"score\": 1, \"why\":",
+    "parent": null
+  },
+  "مرافقي في دروبي لا انتظار لا حيره": {
+    "theme": "رفقة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رفقة\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "لا يضيع الوقت للاماني وصلت": {
+    "theme": "طموح محقق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"طموح محقق\", \"score\": 1,",
+    "parent": null
+  },
+  "يا عذابي رحلت فضها من سيره": {
+    "theme": "ألم الرحيل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ألم الرحيل\", \"score\": 1",
+    "parent": null
+  },
+  "بالوفاء توصوا بي واللقاء يا طيبه": {
+    "theme": "شوق للقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق للقاء\", \"score\": 1,",
+    "parent": null
+  },
+  "صادق وتدروا بي والوعد مااسيبه": {
+    "theme": "صدق الوعد",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صدق الوعد\", \"score\": 0.",
+    "parent": null
+  },
+  "تكفي يا محبوبي لا تطول الغيبه": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "ويا دانه و يا دانه": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "ياليت اقدر وانا ارضيك": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 0.9, \"wh",
+    "parent": null
+  },
+  "سواد عيوني مايكفيك": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "وخلينا من الهجران": {
+    "theme": "وصال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصال\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "ولو تعطف علي خلك": {
+    "theme": "رجاء المحبوب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رجاء المحبوب\", \"score\":",
+    "parent": null
+  },
+  "وتبدي بلضحي ظلك": {
+    "theme": "ظل الحبيب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ظل الحبيب\", \"score\": 0.",
+    "parent": null
+  },
+  "وتروي وردنا بهتان": {
+    "theme": "تضليل وتشويه",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تضليل وتشويه\", \"score\":",
+    "parent": null
+  },
+  "اخيرا اقبل المرسول": {
+    "theme": "بشارة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"بشارة\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "يقولنا حبلكم موصول": {
+    "theme": "استمرارية",
+    "score": 0.6,
+    "why": "json { \"theme\": \"استمرارية\", \"score\": 0.",
+    "parent": null
+  },
+  "تعطف ساهي الاعيان": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "انسي ليالي المودة": {
+    "theme": "نسيان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"نسيان\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "ما قلتلك يازماني": {
+    "theme": "عتاب الزمان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب الزمان\", \"score\": ",
+    "parent": null
+  },
+  "عمر السعادة ثواني": {
+    "theme": "قصر السعادة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"قصر السعادة\", \"score\": ",
+    "parent": null
+  },
+  "بدل جميع المعاني": {
+    "theme": "تغيير المعاني",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تغيير المعاني\", \"score\"",
+    "parent": null
+  },
+  "انا طول ليلي اصيح": {
+    "theme": "بكاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"بكاء\", \"score\": 1, \"why",
+    "parent": null
+  },
+  "وانته الليالي اغاني": {
+    "theme": "بهجة الليالي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"بهجة الليالي\", \"score\":",
+    "parent": null
+  },
+  "مايصير هذا كثير": {
+    "theme": "رفض",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رفض\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "يا عارفين الدوي": {
+    "theme": "نداء للوعي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"نداء للوعي\", \"score\": 0",
+    "parent": null
+  },
+  "بسال عليكم زماني": {
+    "theme": "سؤال الزمان",
+    "score": 0.6,
+    "why": "json { \"theme\": \"سؤال الزمان\", \"score\": ",
+    "parent": null
+  },
+  "كيف الدوي للجريح": {
+    "theme": "معاناة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"معاناة\", \"score\": 0.95,",
+    "parent": null
+  },
+  "هيا تري العمر فاني": {
+    "theme": "فناء العمر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فناء العمر\", \"score\": 1",
+    "parent": null
+  },
+  "في البحر ارمي همومي": {
+    "theme": "تخفيف هموم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تخفيف هموم\", \"score\": 1",
+    "parent": null
+  },
+  "ذرف المدامع اضناني": {
+    "theme": "حزن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حزن\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "لا تلوم يا عيوني": {
+    "theme": "عدم اللوم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عدم اللوم\", \"score\": 0.",
+    "parent": null
+  },
+  "حسبي علي من رماني": {
+    "theme": "لوم",
+    "score": 0.6,
+    "why": "json { \"theme\": \"لوم\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "ما تسالي": {
+    "theme": "إخفاء حزن",
+    "score": 0.6,
+    "why": "json { \"theme\": \"إخفاء حزن\", \"score\": 0.",
+    "parent": null
+  },
+  "اتمهلي": {
+    "theme": "تأنّي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تأنّي\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "لحظة اوضح لك ضروفي اتمهلي": {
+    "theme": "توضيح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"توضيح\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "ردي السلام ياحبيبه": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "نفسي في كلمة طيبه": {
+    "theme": "شوق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"شوق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "يحرم علي عيني المنام": {
+    "theme": "أرق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أرق\", \"score\": 0.95, \"w",
+    "parent": null
+  },
+  "اتمهلي اتمهلي حتي المواقف تنجلي": {
+    "theme": "صبر",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صبر\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "ولا تعجلي": {
+    "theme": "نصيحة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"نصيحة\", \"score\": 0.9, \"",
+    "parent": null
+  },
+  "ما الحب الا للحبيب الاولي": {
+    "theme": "حب أول",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب أول\", \"score\": 1.0, ",
+    "parent": null
+  },
+  "يا لايمه خلي جراحي نايمه": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 1.0, \"w",
+    "parent": null
+  },
+  "اللي مضي ظن وخطا": {
+    "theme": "عتاب الذات",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب الذات\", \"score\": 0",
+    "parent": null
+  },
+  "كانت شكوكي ظالمه": {
+    "theme": "إدراك الخطأ",
+    "score": 0.6,
+    "why": "json { \"theme\": \"إدراك الخطأ\", \"score\": ",
+    "parent": null
+  },
+  "وغيرتي يا حلوتي": {
+    "theme": "غيرة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غيرة\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "كانت سبايب حيرتي": {
+    "theme": "حيرة الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حيرة الحب\", \"score\": 0.",
+    "parent": null
+  },
+  "لا تصدقي حبك يهون": {
+    "theme": "حب أبدي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"حب أبدي\", \"score\": 1, \"",
+    "parent": null
+  },
+  "وتحسب محبتنا هي كما هي": {
+    "theme": "عتاب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عتاب\", \"score\": 0.9, \"w",
+    "parent": null
+  },
+  "لو الهوا المر وصعب خالي الهوا لااهله": {
+    "theme": "صعوبة الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صعوبة الحب\", \"score\": 0",
+    "parent": null
+  },
+  "لو الحبيب حاله غريب ماعاد نصالحه": {
+    "theme": "رفض مصالحة",
+    "score": 0.6,
+    "why": "json { \"theme\": \"رفض مصالحة\", \"score\": 1",
+    "parent": null
+  },
+  "مره اخدني في دوخه حبيتك حبك سكن في الروح": {
+    "theme": "عشق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"عشق\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "لو الهوا مر وصعب خالي الهوا لااهله": {
+    "theme": "صعوبة الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صعوبة الحب\", \"score\": 1",
+    "parent": null
+  },
+  "اداري وانت ترد الويل ماقدر ياريت تقول ماتروح": {
+    "theme": "تمني البقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"تمني البقاء\", \"score\": ",
+    "parent": null
+  },
+  "شفت القمر ضحاك لي ضحكه تزود فتونه": {
+    "theme": "وصف الجمال",
+    "score": 0.6,
+    "why": "json { \"theme\": \"وصف الجمال\", \"score\": 1",
+    "parent": null
+  },
+  "وصارت ياقلبي طاير وفي عيونه تهدي البشاير": {
+    "theme": "فرحة الحب",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فرحة الحب\", \"score\": 0.",
+    "parent": null
+  },
+  "بعد اللي لقاء راح اتكلم ياخدودي تبسم": {
+    "theme": "فرح",
+    "score": 0.6,
+    "why": "json { \"theme\": \"فرح\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "برمش من عينه تسلم وقالي كلمه حنونه": {
+    "theme": "غزل",
+    "score": 0.6,
+    "why": "json { \"theme\": \"غزل\", \"score\": 1, \"why\"",
+    "parent": null
+  },
+  "مسهدن الليالي": {
+    "theme": "أرق",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أرق\", \"score\": 1.0, \"wh",
+    "parent": null
+  },
+  "داخلي متعدي": {
+    "theme": "ضيق داخلي",
+    "score": 0.6,
+    "why": "json { \"theme\": \"ضيق داخلي\", \"score\": 0.",
+    "parent": null
+  },
+  "علي جروحي ابرتكي": {
+    "theme": "صمود",
+    "score": 0.6,
+    "why": "json { \"theme\": \"صمود\", \"score\": 0.95, \"",
+    "parent": null
+  },
+  "جايز يجمعنا ويام": {
+    "theme": "أمل لقاء",
+    "score": 0.6,
+    "why": "json { \"theme\": \"أمل لقاء\", \"score\": 1.0",
+    "parent": null
+  }
+}
