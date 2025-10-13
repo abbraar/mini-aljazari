@@ -237,7 +237,7 @@ with tabs[1]:
     st.markdown('<div class="alz-chip">بحث ذكي</div>', unsafe_allow_html=True)
     st.markdown('<div class="alz-card">', unsafe_allow_html=True)
 
-    st.subheader("اسأل عن مقاطع ثقافية (RAG)")
+    st.subheader("اسأأدخل ما تُريد البحث عنه (مثل: بيت عن البحر)")
     question = st.text_input("سؤالك:", "")
     k = st.number_input("عدد النتائج", min_value=1, max_value=10, value=3, step=1)
     c1, c2 = st.columns(2)
