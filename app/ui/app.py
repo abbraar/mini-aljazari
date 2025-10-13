@@ -198,7 +198,7 @@ with tabs[0]:
     st.markdown('<div class="alz-chip">تحليل نص</div>', unsafe_allow_html=True)
     st.markdown('<div class="alz-card">', unsafe_allow_html=True)
 
-    st.subheader("أدخل سطرًا لتحليل اللهجة والثيم")
+    st.subheader("أدخل بيتًا أو سطرًا شعريًا للتحليل")
     text = st.text_area("النص:", "", height=100)
 
     go = st.button("تحليل", type="primary")
