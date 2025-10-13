@@ -279,15 +279,17 @@ with tabs[1]:
 
 # -------- Tab 3: About --------
 with tabs[2]:
-    st.markdown('<div class="alz-chip">حول المنتج</div>', unsafe_allow_html=True)
+    st.markdown('<div class="alz-chip">حول النموذج</div>', unsafe_allow_html=True)
     st.markdown('<div class="alz-card">', unsafe_allow_html=True)
 
-    st.info("تنويه: هذا المنتج هو مجرد نموذج أولي (Prototype) ويُمثّل تطبيقًا عمليًا لفكرة بحثية علمية. النموذج قيد البناء والتقييم.")
+    st.info("تنويه: هذا النموذج هو مجرد نموذج أولي (Prototype) ويُمثّل تطبيقًا عمليًا لفكرة بحثية علمية. النموذج قيد البناء والتقييم.")
     st.markdown(
         """
 نموذج مصغّر يعرض:
 - تصنيف **الثيم** (وطنية/غزل/دينية/رياضية) + **اللهجة**.
 - استرجاع مقاطع ذات صلة بالسؤال مع عوامل ذكاء (نية السؤال، الثيم المقصود، تصفية اللهجة).
+- قد يُرجع لك النموذج مقاطع بثيم "أخرى"، لأن تصنيف جميع المقاطع الشعرية لم يكتمل بعد.
+
 """
     )
     st.caption("© 2025 — Abrar Sebiany — FastAPI + Streamlit")
